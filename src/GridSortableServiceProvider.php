@@ -7,9 +7,6 @@ use Dcat\Admin\Grid;
 
 class GridSortableServiceProvider extends ServiceProvider
 {
-    protected $js = [
-        'js/sortable.min.js',
-    ];
     protected $column = '__sortable__';
 
     public function register()
