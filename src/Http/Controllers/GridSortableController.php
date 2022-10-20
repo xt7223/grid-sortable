@@ -19,7 +19,7 @@ class GridSortableController extends Controller
         $sorts = collect($sorts)
             ->pluck('key')
             ->combine(
-                collect($sorts)->pluck('sort')->sort()
+                collect($sorts)->pluck('sort')->sortDesc()
             );
 
         try {

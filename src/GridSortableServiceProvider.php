@@ -29,7 +29,7 @@ class GridSortableServiceProvider extends ServiceProvider
             $this->tools(new SaveOrderButton($sortName));
 
             if (!request()->has($sortName)) {
-                $this->model()->ordered();
+                $this->model()->ordered('desc');
             }
 
             $this->column($column, ' ')
