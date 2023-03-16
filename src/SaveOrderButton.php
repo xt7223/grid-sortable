@@ -16,6 +16,7 @@ class SaveOrderButton extends AbstractTool
 
     protected function script()
     {
+        return null;
         $route = admin_base_path('extension/grid-sort');
         $model = $this->parent->model()->repository()->model();
         $class = get_class($model);
